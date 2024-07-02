@@ -1,0 +1,21 @@
+/* style.css */
+
+/* Header Styles */
+header {
+  background-color: #274375; /* WHO blue tone */
+  height: 147px; /* Increased height to accommodate logo */
+  display: flex;
+  align-items: center;
+  padding: 0 20px; /* Add some padding for spacing */
+}
+
+/* Logo Container Styles */
+.logo-container {
+  height: 100%; /* Inherit full height of header */
+  width: 100px; /* Adjust width as needed for your logo */
+}
+
+.logo-container img {
+  height: 100%; /* Stretch image to fill container height */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
