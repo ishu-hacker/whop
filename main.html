@@ -1,136 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>World Health Organization (WHO)</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
 
-<!DOCTYPE html> <html lang="en"> <head> <!-- head to scrape:on --> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1"><title>
-	World Health Organization (WHO)
-</title> <link rel="shortcut icon" href="/favicon.ico"> <link rel="manifest" href="/manifest.json"> <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png"> <meta name="theme-color" content="#007eb4" /> <link rel="preconnect" href="https://fonts.googleapis.com" /> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <link rel="preconnect" href="https://use.fontawesome.com" crossorigin /> <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" /> <link rel="dns-prefetch" href="https://kendo.cdn.telerik.com" /> <link rel="prefetch" href="https://kendo.cdn.telerik.com/2021.1.119/js/kendo.all.min.js"> <link rel="prefetch" href="https://kendo.cdn.telerik.com/2021.1.119/js/kendo.timezones.min.js"> <link rel="preconnect" href="https://cdn.who.int" /> <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" type="text/css" /> <link rel='stylesheet' href='style/grid.min.css' > <!-- head to scrape:off --> <link rel='stylesheet' href='style/origin.min.css' ><link rel='stylesheet' href='style/main.min.css' > <link rel='stylesheet' href='style/print.min.css' media='print'>
-                </script><meta property="og:locale" content="en_US" /><meta property="og:title" content="World Health Organization (WHO)" /><meta property="og:description" content="The United Nations agency working to promote health, keep the world safe and serve the vulnerable." /><meta property="og:image" content="https://cdn.who.int/media/images/default-source/infographics/logo-who.tmb-1200v.jpg?sfvrsn=2fcc68a0_35" /><style type="text/css" media="all">    .fundwrapper-desktop,
-    .fundwrapper-mobile {
-        padding: 1em;
-    }
+    <!-- Essential preconnect and DNS prefetch links for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://use.fontawesome.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
 
-    .fundwrapper-desktop .prefix,
-    .fundwrapper-mobile .prefix {
-        font-weight: 700;
-    }
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style/grid.min.css" />
+    <link rel="stylesheet" href="style/origin.min.css" />
+    <link rel="stylesheet" href="style/main.min.css" />
+    <link rel="stylesheet" href="style/print.min.css" media="print" />
 
-    .fundwrapper-desktop .button,
-    .fundwrapper-mobile .button {
-        margin-top: 0;
-    }
+    <!-- Metadata for social media -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="World Health Organization (WHO)" />
+    <meta property="og:description" content="The United Nations agency working to promote health, keep the world safe and serve the vulnerable." />
+    <meta property="og:image" content="https://cdn.who.int/media/images/default-source/infographics/logo-who.tmb-1200v.jpg?sfvrsn=2fcc68a0_35" />
 
-    .fundwrapper-desktop {
-        position: absolute;
-        right: 1em;
-    }
-
-    .fundwrapper-desktop .button {
-        width: 100%;
-    }
-
-    @media screen AND (max-width:1021px) {
-        .fundwrapper-desktop {
-            position: relative;
-            width: auto;
-            padding-top: 0;
+    <!-- Custom styles (only necessary rules included) -->
+    <style type="text/css">
+        .fundwrapper-desktop, .fundwrapper-mobile {
+            padding: 1em;
         }
-
-        .fundwrapper-desktop .button {
-            width: auto;
-        }
-
-        .fundwrapper-desktop {
-            display: none;
-        }
-
-        .fundwrapper-mobile {
-            display: block;
-        }
-    }
-
-    @media screen AND (min-width:1021px) {
-        .fundwrapper-desktop {
-            display: block;
-        }
-
-        .fundwrapper-mobile {
-            display: none;
-        }
-    }
-
-    @media screen AND (max-width:320px) {
-        .fundwrapper-desktop {
-            display: none;
-        }
-
-        .fundwrapper-mobile {
-            display: block;
-        }
-
-        .fundwrapper-mobile {
-            width: 100%;
-            padding-top: 0;
-            top: 150px;
-            clear: both;
-            float: left;
-        }
-
-        .fundwrapper-mobile .button {
+        .fundwrapper-desktop .button, .fundwrapper-mobile .button {
             width: 100%;
         }
-    }
-
-    @media (max-width: 1020px) {
-        #sf-main-header {
-            margin-bottom: 0px;
-            padding-bottom: 0px;
+        @media (max-width: 1020px) {
+            .fundwrapper-desktop {
+                display: none;
+            }
+            .fundwrapper-mobile {
+                display: block;
+            }
         }
-    }</style><style type="text/css" media="all">.row-flex{display:flex;flex-direction:row}.row-flex .card{flex-grow:1}.row-flex .sf_colsIn{display:flex;flex-direction:column;flex-grow:1}.row-flex .card__content-group{display:flex;flex-direction:column;flex-grow:1}.row-flex .card__content{display:flex;flex-grow:1}.qa-details__content .sf-accordion__content p a{outline:0;color:var(--l2-neutralForegroundRest);border-bottom:1px solid var(--l2-neutralForegroundRest);text-decoration:none}.qa-details__content .sf-accordion__content p a:focus{outline:0;color:var(--l2-accentFillHover);background-color:var(--l2-neutralFillStealthHover);border-bottom:3px solid var(--l2-neutralFocus);text-decoration:none}.qa-details__content .sf-accordion__content p a:hover{outline:0;color:var(--l2-neutralForegroundRest);background-color:var(--l2-neutralFillStealthHover);border-bottom:3px solid var(--l2-neutralFocus);text-decoration:none}.mdc-card.mdc-card--background .card-media--item{background:0 0;background:linear-gradient(180deg,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 25%,#000 100%)}.mdc-card.mdc-card--background a .item--title,.mdc-card.mdc-card--background a:active .item--title,.mdc-card.mdc-card--background a:focus .item--title,.mdc-card.mdc-card--background a:hover .item--title{text-decoration:none}.mdc-card a:visited .item--title,.mdc-card.mdc-card--background .item--title{color:#fff}.card--solid.bg-dark:hover{color:#fff;background-color:#20313b;border:2px solid #fff}.card--solid.bg-dark a{color:#fff;background-color:#20313b;border:2px solid #20313b}.card--solid.bg-dark a:hover{color:#20313b;background-color:#fff;border:2px solid #20313b}.card--solid.bg-dark:focus-within{color:#fff;background-color:#20313b;border:2px solid var(--l4-neutralFocus)}.mdc-card a .item--title,.mdc-card a:visited .item--title{color:var(--l4-neutralForegroundRest)}.mdc-card a:visited .item--title{color:var(--l4-neutralForegroundRest)!important}.-sf-integrated-app body,.sfPageContainer .RadDock .rdContent a.sfAddContentLnk,.zeContentMode .sfPageContainer .RadDock .rdContent,.zeLayoutMode .sfPageContainer .RadDock .rdContent,.zeSettingsMode .sfPageContainer .RadDock .rdContent,.zeThemesMode .sfPageContainer .RadDock .rdContent{font-family:Arial,Verdana,sans-serif!important}#navigationToScrape .content-block a,.alphabetical-nav--list .alphabetical-nav--list-item a,.alphabetical-nav--list a,.nav--list a{text-decoration:none!important}.sf-events-wrapper .vertical-list-item:focus,.sf-events-wrapper .vertical-list-item:focus-within{outline:2px solid var(--l4-neutralFocus)!important}.sf-events-wrapper .vertical-list-item a:focus-within,.sf-events-wrapper .vertical-list-item:focus{outline:0}.top-header li.active>a,.top-header li.open>a,.top-header li.selected>a,.top-header li:hover>a{background-color:var(--d-l4-accentFillHover)}
-.webinars-listing .sf-multimedia-item__container {
-    aspect-ratio: 16/9;
-    width: 100%;
-    height: auto !important;
-    min-height: 304px;
-}
-
-.webinar-episodes.vertical-list .vertical-list-item .thumb {
-    min-height: 131px;
-    aspect-ratio: 16/9;
-    height: auto;
-    width: 100%;
-}
-
-@media screen and (max-width:768px) {
-    .webinar-episodes.vertical-list .vertical-list-item .thumb {display:none;}
-    
-}
-
-.webinar-episodes-details .sf-multimedia-item__container {
-    height: 390px;
-    aspect-ratio: 16/9;
-    height: auto;
-}
-
-.mdc-card--background a:visited .item--title {
-    color: #fff!important;
-}
-.hero-image--content.plx-bg--transparent.text-center {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-}
-.k-safari .plx-static .inner.responsive-background-image {
-    background-attachment: unset;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.plx-static.hero-image--wrapper.has-caption {
-        margin-bottom: 0;
-}
-@media (max-width: 768px) {
-.row--flex, .row-flex {flex-wrap:wrap;}
-.row--flex .sf_colsIn {margin-bottom:1rem;}
-}
-</style><meta name="twitter:card" content="summary_large_image" /><link rel="canonical" href="https://www.who.int" /><meta name="description" content="The United Nations agency working to promote health, keep the world safe and serve the vulnerable." /><meta name="keywords" content="World Health Organization, health, health for all, #HealthForAll, health organization, universal health coverage, disease, UHC, WHO, health emergencies, health data, health policy, advocacy, health issues, health news" /></head> <body class="sf-body "> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QFSQRT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script src="/ScriptResource.axd?d=okuX3IVIBwfJlfEQK32K3l5K7YGiATb30h89J0olbNMeAyOtdYE6_Exv9Bd_ta2_XSFvjotxKLnlt9vcM6Kg3aKCXjsPLAfc02HCCEnrn0StjUGoNmpcNHr0Q7qewBsI-wQmYIVPg1mLq03jlrRY4M-hzwvjWouuBv3ehropIpydPBUR0&amp;t=ffffffff829b44f1" type="text/javascript"></script><script src="/ScriptResource.axd?d=ePnjFy9PuY6CB3GWMX-b_9dUqj_iyHKbtZiYzX__OhcBoGTfz1BCLaN4h7Fbajcqvr0jzshQTloWygrPD-ACaSqbbnMU2RjynHKyNq228hugZnvpXRMVXdY9OyDF4Ewext63iLJGrHIt24Ious-uCOclPLq5lpYk7ok9AjUyDR56hxVu0&amp;t=ffffffff829b44f1" type="text/javascript"></script><script src="/ScriptResource.axd?d=2z9h4-hKx8Yk1hygmet7pjkFguWG8Z1Fhnuod_CvCHCExwAB9TmazYiwtnNc8_PE_sQ84nrSkjqY9EALBnpl3lcKaF9OEQUFbopzQYCfhpJXDQLR-yvNY8t812iM5Aejg6fxAEzrTW8MI2owx-zl9SrMG73lcKP32vb5eFgX02xyZpHf0&amp;t=ffffffff829b44f1" type="text/javascript"></script> <div class="sf-main-site main-site main"> <!-- header:on --> <!--noindex--><!--stopindex--> <header> <div id="sf-top-header" class="sf-top-header top-header"> <div class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container"> 
+        @media (min-width: 1021px) {
+            .fundwrapper-desktop {
+                display: block;
+            }
+            .fundwrapper-mobile {
+                display: none;
+            }
+        }
+        /* Example of keeping a simple flex utility */
+        .row-flex { display: flex; flex-direction: row; }
+    </style>
+</head><meta name="twitter:card" content="summary_large_image" /><link rel="canonical" href="https://www.who.int" /><meta name="description" content="The United Nations agency working to promote health, keep the world safe and serve the vulnerable." /><meta name="keywords" content="World Health Organization, health, health for all, #HealthForAll, health organization, universal health coverage, disease, UHC, WHO, health emergencies, health data, health policy, advocacy, health issues, health news" /></head> <body class="sf-body "> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QFSQRT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script src="/ScriptResource.axd?d=okuX3IVIBwfJlfEQK32K3l5K7YGiATb30h89J0olbNMeAyOtdYE6_Exv9Bd_ta2_XSFvjotxKLnlt9vcM6Kg3aKCXjsPLAfc02HCCEnrn0StjUGoNmpcNHr0Q7qewBsI-wQmYIVPg1mLq03jlrRY4M-hzwvjWouuBv3ehropIpydPBUR0&amp;t=ffffffff829b44f1" type="text/javascript"></script><script src="/ScriptResource.axd?d=ePnjFy9PuY6CB3GWMX-b_9dUqj_iyHKbtZiYzX__OhcBoGTfz1BCLaN4h7Fbajcqvr0jzshQTloWygrPD-ACaSqbbnMU2RjynHKyNq228hugZnvpXRMVXdY9OyDF4Ewext63iLJGrHIt24Ious-uCOclPLq5lpYk7ok9AjUyDR56hxVu0&amp;t=ffffffff829b44f1" type="text/javascript"></script><script src="/ScriptResource.axd?d=2z9h4-hKx8Yk1hygmet7pjkFguWG8Z1Fhnuod_CvCHCExwAB9TmazYiwtnNc8_PE_sQ84nrSkjqY9EALBnpl3lcKaF9OEQUFbopzQYCfhpJXDQLR-yvNY8t812iM5Aejg6fxAEzrTW8MI2owx-zl9SrMG73lcKP32vb5eFgX02xyZpHf0&amp;t=ffffffff829b44f1" type="text/javascript"></script> <div class="sf-main-site main-site main"> <!-- header:on --> <!--noindex--><!--stopindex--> <header> <div id="sf-top-header" class="sf-top-header top-header"> <div class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container"> 
 <div id="TopHeader_TD9F2A204012_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
 </div>
 
@@ -884,47 +808,74 @@ WHO
 </div>
     </div>
 </div>
-
 </div>
-<div id="PageContent_C142_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container"><div class="row" data-sf-element="Row">
-    <div id="PageContent_C630_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Column 1"><div class="row" data-sf-element="Row">
-        <div id="PageContent_C633_Col00" class="sf_colsIn col-md-4" data-sf-element="Column 1" data-placeholder-label="Column 1">
-            <div class="section-heading">
-            
-                        <h2>Campaigns</h2>
-            
-                    <a href="https://www.who.int/campaigns" role="link">All →</a>
-            </div>
-            
-            
-            <div class="mdc-card mdc-card--outlined">
-                <div class="mdc-card__primary-action " tabindex="-1">
-                        <a href="/campaigns" class="link" rel="noopener" target="_self">
-                                <div class="mdc-card__media ">
-                                    <img class="mdc-card__media--16-9" src="https://cdn.who.int/media/images/default-source/headquarters/campaigns/walk-the-talk/2024/walk-the-talk-activity.jpg?sfvrsn=b7fdec67_3" title="Walk the Talk activity" alt="Two smiling men holding basketballs while another looks on">
-                                </div>
-            
-                            <div class="card-media--item">
-                                <div class="card-media-primary">
-            
-                                        <div class="item--title">Find out more</div>
-            
-                                    <div class="item--subtitle"></div>
-                                </div>
-                                <div class="card-media-secondary">
-            
-                                </div>
+<div class="row" data-sf-element="Row">
+    <div id="PageContent_C633_Col00" class="sf_colsIn col-md-4" data-sf-element="Column 1" data-placeholder-label="Column 1">
+<div class="section-heading">
+
+            <h2>Campaigns</h2>
+
+        <a href="https://www.who.int/campaigns" role="link">All →</a>
+</div>
+
+
+<div class="mdc-card mdc-card--outlined">
+    <div class="mdc-card__primary-action " tabindex="-1">
+            <a href="/campaigns/world-drowning-prevention-day/2024" class="link" rel="noopener" target="_self">
+                    <div class="mdc-card__media ">
+                        <img class="mdc-card__media--16-9" src="https://cdn.who.int/media/images/default-source/topics/populations-demographics-human-behaviour-and-injuries/drowning/children-playing-in-water.jpg?sfvrsn=4988bf70_3" title="children playing in water" alt="A child jumping into a body of water">
+                    </div>
+
+                <div class="card-media--item">
+                    <div class="card-media-primary">
+
+                            <div class="item--title">World Drowning Prevention Day</div>
+
+                        <div class="item--subtitle"></div>
+                    </div>
+                    <div class="card-media-secondary">
+                            <div class="item--abstract">
+                                25 July
                             </div>
-                        </a>
+
+                    </div>
                 </div>
-            </div>
+            </a>
+    </div>
+</div>
+
+
+<div class="mdc-card mdc-card--outlined">
+    <div class="mdc-card__primary-action " tabindex="-1">
+            <a href="/campaigns/world-breastfeeding-week/2024" class="link" rel="noopener" target="_self">
+                    <div class="mdc-card__media ">
+                        <img class="mdc-card__media--16-9" src="https://cdn.who.int/media/images/default-source/headquarters/campaigns/world-breastfeeding-week/2024/happy-mother-breastfeeding-baby.jpg?sfvrsn=3124a494_5" title="happy-mother-breastfeeding-baby" alt="Happy mother breastfeeding a baby">
+                    </div>
+
+                <div class="card-media--item">
+                    <div class="card-media-primary">
+
+                            <div class="item--title">World Breastfeeding Week</div>
+
+                        <div class="item--subtitle"></div>
+                    </div>
+                    <div class="card-media-secondary">
+                            <div class="item--abstract">
+                                1–7 August
+                            </div>
+
+                    </div>
                 </div>
-    <div id="PageContent_C633_Col01" class="sf_colsIn col-md-6 col-md-push-1" data-sf-element="Column 2" data-placeholder-label="Column 2">
+            </a>
+    </div>
+</div>
+    </div>
+    <div id="PageContent_C633_Col01" class="sf_colsIn col-md-7 col-md-push-1" data-sf-element="Column 2" data-placeholder-label="Column 2">
 <div class="section-heading">
 
             <h2>Events</h2>
 
-        <a href="/news-room/events" role="link">All →</a>
+        <a href="https://www.who.int/news-room/events" role="link">All →</a>
 </div>
 
 
@@ -932,102 +883,96 @@ WHO
 
 <div class="list-view vertical-list sf-events-wrapper sf-events-list vertical-list--image">
         <div class="list-view--item vertical-list-item">
-            <a href="/news-room/events/detail/2024/05/26/default-calendar/walk-the-talk-geneva-2024" class="link-container table event-table" aria-label="Walk the Talk Geneva 2024" role="link">
+            <a href="/news-room/events/detail/2024/07/02/default-calendar/launch-of-new-who-estimates-of-physical-inactivity-in-adults" class="link-container table event-table" aria-label="Launch of new WHO estimates of physical inactivity in adults" role="link">
                 <div class="table-cell">
                     <div class="thumb">
-                        <div class="background-image background-image--small" data-image="https://cdn.who.int/media/images/default-source/campaigns---walk-the-talk/walk-the-talk/wtt-geneva-2023/wtt2023-crowd-hq139410.tmb-768v.jpg?sfvrsn=bae91ad8_2" style="background-image: url('https://cdn.who.int/media/images/default-source/campaigns---walk-the-talk/walk-the-talk/wtt-geneva-2023/wtt2023-crowd-hq139410.tmb-131v.jpg?sfvrsn=bae91ad8_2')"></div>
+                        <div class="background-image background-image--small" data-image="https://cdn.who.int/media/images/default-source/health-topics/physical-activity/who-estimates-of-physical-inactivity-in-adults.tmb-768v.jpg?sfvrsn=44178cf_1" style="background-image: url(&quot;https://cdn.who.int/media/images/default-source/health-topics/physical-activity/who-estimates-of-physical-inactivity-in-adults.tmb-479v.jpg?sfvrsn=44178cf_1&quot;);"></div>
                     </div>
                 </div>
 
                 <div class="table-cell info">
-                        <div class="sf-tags-list">
-                            <div class="sf-tags-list-item">Walk the Talk</div>
-                        </div>
 
-                    <p class="heading text-underline">Walk the Talk Geneva 2024</p>
+                    <p class="heading text-underline">Launch of new WHO estimates of physical inactivity in adults</p>
 
                     <span class="timestamp">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                        26 May 2024
+                        2 July 2024 14:00 – 15:30 CET
                     </span>
                 </div>
             </a>
         </div>
         <div class="list-view--item vertical-list-item">
-            <a href="/news-room/events/detail/2024/05/26/default-calendar/tier-3-goarn-outbreak-response-leadership-training" class="link-container table event-table" aria-label="Tier 3 GOARN Outbreak Response Leadership Training" role="link">
+            <a href="/news-room/events/detail/2024/07/03/default-calendar/webinar--a-deep-dive-into-the-development-of-new-who-global-comparable-estimates-of-physical-inactivity-in-adults" class="link-container table event-table" aria-label="Webinar: A deep dive into the development of new WHO global comparable estimates of physical inactivity in adults" role="link">
                 <div class="table-cell">
                     <div class="thumb">
-                        <div class="background-image background-image--small" data-image="https://cdn.who.int/media/images/default-source/emergencies/goarn-81-tim-stark-(002).tmb-768v.jpg?sfvrsn=f156f25_1" style="background-image: url('https://cdn.who.int/media/images/default-source/emergencies/goarn-81-tim-stark-(002).tmb-131v.jpg?sfvrsn=f156f25_1')"></div>
+                        <div class="background-image background-image--small" data-image="https://cdn.who.int/media/images/default-source/headquarters/teams/uhc-healthier-populations-(hep)/health-promotion-(hpr)/more-physical-activity-(run)/graph-growth-money-finance-chart.tmb-768v.jpg?sfvrsn=cf94cd35_4" style="background-image: url('https://cdn.who.int/media/images/default-source/headquarters/teams/uhc-healthier-populations-(hep)/health-promotion-(hpr)/more-physical-activity-(run)/graph-growth-money-finance-chart.tmb-131v.jpg?sfvrsn=cf94cd35_4')"></div>
                     </div>
                 </div>
 
                 <div class="table-cell info">
 
-                    <p class="heading text-underline">Tier 3 GOARN Outbreak Response Leadership Training</p>
+                    <p class="heading text-underline">Webinar: A deep dive into the development of new WHO global comparable estimates of physical inactivity in adults</p>
 
                     <span class="timestamp">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                        26 – 30 May 2024
+                        3 July 2024 15:00 – 16:15 CET
                     </span>
                 </div>
             </a>
         </div>
         <div class="list-view--item vertical-list-item">
-            <a href="/news-room/events/detail/2024/05/26/default-calendar/launch-of-who-s-investment-round-and-announcement-of-winners-of-5th-film-festival" class="link-container table event-table" aria-label="Launch of WHO’s Investment Round and announcement of winners of 5th film festival" role="link">
+            <a href="/news-room/events/detail/2024/07/04/default-calendar/national-workforce-capacity-for-the-essential-public-health-functions--africa-sub-regional-webinar" class="link-container table event-table" aria-label="National Workforce Capacity for the essential public health functions: Africa regional webinar" role="link">
                 <div class="table-cell">
                     <div class="thumb">
-                        <div class="background-image background-image--small" data-image="https://cdn.who.int/media/images/default-source/imported/film-festival/haff-trophy.tmb-768v.jpeg?sfvrsn=a8b08a14_1" style="background-image: url('https://cdn.who.int/media/images/default-source/imported/film-festival/haff-trophy.tmb-131v.jpeg?sfvrsn=a8b08a14_1')"></div>
+                        <div class="background-image background-image--small" data-image="https://cdn.who.int/media/images/default-source/health-topics/health-workforce/thumbnails-hwf/phewf-th/phewf-roadmap-action-arease714719e369e4df0a8ceed3778b133a7.tmb-768v.jpg?sfvrsn=4543a871_1" style="background-image: url(&quot;https://cdn.who.int/media/images/default-source/health-topics/health-workforce/thumbnails-hwf/phewf-th/phewf-roadmap-action-arease714719e369e4df0a8ceed3778b133a7.tmb-479v.jpg?sfvrsn=4543a871_1&quot;);"></div>
                     </div>
                 </div>
 
                 <div class="table-cell info">
 
-                    <p class="heading text-underline">Launch of WHO’s Investment Round and announcement of winners of 5th film festival</p>
+                    <p class="heading text-underline">National Workforce Capacity for the essential public health functions: Africa regional webinar</p>
 
                     <span class="timestamp">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                        26 May 2024 17:00 – 18:30 CET
+                        4 July 2024 16:00 – 17:15 CET
                     </span>
                 </div>
             </a>
         </div>
         <div class="list-view--item vertical-list-item">
-            <a href="/news-room/events/detail/2024/05/27/default-calendar/world-summit-on-the-information-society-(wsis)" class="link-container table event-table" aria-label="World Summit on the Information Society (WSIS)" role="link">
+            <a href="/news-room/events/detail/2024/07/09/default-calendar/hlpf-2024-side-event--the-health-argument-for-climate-action" class="link-container table event-table" aria-label="HLPF 2024 Side Event: The Health Argument for Climate Action" role="link">
                 <div class="table-cell">
                     <div class="thumb">
-                        <div class="background-image background-image--small" data-image="https://cdn.who.int/media/images/default-source/digital-health/gidh/wsis-forum.tmb-768v.png?sfvrsn=e5dbff2c_6" style="background-image: url('https://cdn.who.int/media/images/default-source/digital-health/gidh/wsis-forum.tmb-131v.png?sfvrsn=e5dbff2c_6')"></div>
+                        <div class="background-image background-image--small" data-image="https://cdn.who.int/media/images/default-source/health-and-climate-change/climate-strike-in-australia-c-don-arnoldgetty-images.tmb-768v.jpg?sfvrsn=fad890a0_5" style="background-image: url(&quot;https://cdn.who.int/media/images/default-source/health-and-climate-change/climate-strike-in-australia-c-don-arnoldgetty-images.tmb-479v.jpg?sfvrsn=fad890a0_5&quot;);"></div>
                     </div>
                 </div>
 
                 <div class="table-cell info">
 
-                    <p class="heading text-underline">World Summit on the Information Society (WSIS)</p>
+                    <p class="heading text-underline">HLPF 2024 Side Event: The Health Argument for Climate Action</p>
 
                     <span class="timestamp">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                        27 – 31 May 2024
+                        9 July 2024 13:15 – 14:30 ET
                     </span>
                 </div>
             </a>
         </div>
         <div class="list-view--item vertical-list-item">
-            <a href="/about/accountability/governance/world-health-assembly/seventy-seventh" class="link-container table event-table" aria-label="Seventy-seventh World Health Assembly" role="link">
+            <a href="/news-room/events/detail/2024/07/10/default-calendar/webinar--climate-resilient-and-environmentally-sustainable-health-care-facilities" class="link-container table event-table" aria-label="Webinar: Climate resilient and environmentally sustainable health care facilities" role="link">
                 <div class="table-cell">
                     <div class="thumb">
-                        <div class="background-image background-image--small" data-image="https://cdn.who.int/media/images/default-source/world-health-assembly/wha71/day-1/wha71-hashtag-palais-1280.tmb-768v.jpg?sfvrsn=f5018882_7" style="background-image: url('https://cdn.who.int/media/images/default-source/world-health-assembly/wha71/day-1/wha71-hashtag-palais-1280.tmb-131v.jpg?sfvrsn=f5018882_7')"></div>
+                        <div class="background-image background-image--small" data-image="/images/default-source/departments/ncds/sdr/afro-initiative-climate-change.tmb-768v.jpg?Culture=en&amp;sfvrsn=da689c89_1" style="background-image: url(&quot;/images/default-source/departments/ncds/sdr/afro-initiative-climate-change.tmb-479v.jpg?Culture=en&amp;sfvrsn=da689c89_1&quot;);"></div>
                     </div>
                 </div>
 
                 <div class="table-cell info">
-                        <div class="sf-tags-list">
-                            <div class="sf-tags-list-item">Seventy-seventh</div>
-                        </div>
 
-                    <p class="heading text-underline">Seventy-seventh World Health Assembly</p>
+                    <p class="heading text-underline">Webinar: Climate resilient and environmentally sustainable health care facilities</p>
 
                     <span class="timestamp">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                        27 May – 1 June 2024
+                        10 July 2024
                     </span>
                 </div>
             </a>
@@ -1036,13 +981,6 @@ WHO
 
 
     </div>
-</div>
-
-    </div>
-</div>
-</div>
-</div>
-
 </div>
  </section> <!-- footer:on --> <!--noindex--><!--stopindex--> <footer id="sf-footer"> <div class="main-footer"> 
 <div id="Footer_TD9F2A204001_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container"><div class="row" data-sf-element="Row">
